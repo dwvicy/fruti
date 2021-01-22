@@ -21,6 +21,9 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  carousel_slider: ^2.3.1
+  google_nav_bar: ^3.2.0
+  line_icons: ^0.2.0
   flutter:
     sdk: flutter
 
