@@ -2,11 +2,11 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fruti/AppTheme.dart';
-import 'package:fruti/cart.dart';
-import 'package:fruti/favorites.dart';
-import 'package:fruti/home_page.dart';
-import 'package:fruti/search.dart';
+import 'package:fruti/constants/AppTheme.dart';
+import 'package:fruti/screens/cart.dart';
+import 'package:fruti/screens/favorites.dart';
+import 'package:fruti/screens/home_page.dart';
+import 'package:fruti/screens/search.dart';
 import 'package:line_icons/line_icons.dart';
 
 class MyHome extends StatefulWidget {
@@ -69,6 +69,7 @@ class _MyHomeState extends State<MyHome> {
             });
           }),
       bottomNavigationBar: CurvedNavigationBar(
+        height: 60,
         backgroundColor: Colors.transparent,
         buttonBackgroundColor: AppTheme.ellow,
         color: AppTheme.lightYellow,

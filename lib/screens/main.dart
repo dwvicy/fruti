@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruti/home.dart';
+import 'package:fruti/constants/home.dart';
 
 void main() {
   runApp(Fruti());
