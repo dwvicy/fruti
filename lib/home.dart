@@ -25,7 +25,7 @@ class _MyHomeState extends State<MyHome> {
               child: Center(
                 child: Text(
                   'Fruti',
-                  style: TextStyle(color: Colors.black, fontSize: 40),
+                  style: TextStyle(color: Colors.black, fontSize: 40, fontFamily:'Poppins' ),
                 ),
               ),
             )
