@@ -59,15 +59,18 @@ class _MyHomeState extends State<MyHome> {
         backgroundColor: Colors.white,
         elevation: 0,
       ),
-      body: PageView(
-          physics: NeverScrollableScrollPhysics(),
-          controller: _pageController,
-          children: pages,
-          onPageChanged: (int index) {
-            setState(() {
-              _pageController.jumpToPage(index);
-            });
-          }),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: PageView(
+            physics: NeverScrollableScrollPhysics(),
+            controller: _pageController,
+            children: pages,
+            onPageChanged: (int index) {
+              setState(() {
+                _pageController.jumpToPage(index);
+              });
+            }),
+      ),
       bottomNavigationBar: CurvedNavigationBar(
         height: 60,
         backgroundColor: Colors.transparent,
