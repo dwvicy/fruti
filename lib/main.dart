@@ -11,7 +11,10 @@ class Fruti extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyHome(),
-      darkTheme: ThemeData.dark(),
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+            iconTheme: IconThemeData(color: Colors.black54, size: 30)),
+      ),
     );
   }
 }
