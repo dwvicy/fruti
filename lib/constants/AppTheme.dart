@@ -15,12 +15,12 @@ class Style {
       fontFamily: 'Poppins',
       fontWeight: FontWeight.bold,
       fontSize: 30,
-      color: Colors.black26);
+      color: Colors.black54);
   static const TextStyle productName = TextStyle(
       fontFamily: 'Poppins',
       fontWeight: FontWeight.bold,
       fontSize: 20,
-      color: Colors.black26);
+      color: Colors.black54);
   static const TextStyle productDesc = TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.bold,

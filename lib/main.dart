@@ -11,16 +11,12 @@ class Fruti extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-       theme: ThemeData(
-        appBarTheme: AppBarTheme(
-            iconTheme: IconThemeData(color: Colors.black54, size: 30)),
-      ),
-  
+      theme: ThemeData(
+          appBarTheme: AppBarTheme(
+              iconTheme: IconThemeData(color: Colors.black54, size: 30)),
+          fontFamily: 'Poppins'),
       initialRoute: '/',
-      routes: {
-        '/':(context) => MyHome(),
-        '/notif':(context) => NotifList()
-      },
+      routes: {'/': (context) => MyHome(), '/notif': (context) => NotifList()},
     );
   }
 }
