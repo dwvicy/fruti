@@ -11,7 +11,11 @@ class Fruti extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      darkTheme: ThemeData.dark(),
+       theme: ThemeData(
+        appBarTheme: AppBarTheme(
+            iconTheme: IconThemeData(color: Colors.black54, size: 30)),
+      ),
+  
       initialRoute: '/',
       routes: {
         '/':(context) => MyHome(),
