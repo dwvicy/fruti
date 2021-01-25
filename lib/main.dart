@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruti/constants/nav.dart';
+import 'package:fruti/constants/notifs.dart';
 
 void main() {
   runApp(Fruti());
@@ -10,8 +11,12 @@ class Fruti extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyHome(),
       darkTheme: ThemeData.dark(),
+      initialRoute: '/',
+      routes: {
+        '/':(context) => MyHome(),
+        '/notif':(context) => NotifList()
+      },
     );
   }
 }

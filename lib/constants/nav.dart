@@ -49,10 +49,14 @@ class _MyHomeState extends State<MyHome> {
         actions: [
           Padding(
             padding: const EdgeInsets.all(12.0),
-            child: Icon(
-              LineIcons.bell,
+            child: IconButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/notif');
+            
+              }, 
+              icon: Icon(LineIcons.bell,
               color: AppTheme.gray,
-              size: 30,
+              size: 30),
             ),
           )
         ],
