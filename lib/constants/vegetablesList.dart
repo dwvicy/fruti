@@ -20,7 +20,7 @@ class _VegetablesListState extends State<VegetablesList> {
                   width: MediaQuery.of(context).size.width * 0.35,
                   child: Text('this.fruit'),
                   decoration: BoxDecoration(
-                      color: Colors.orangeAccent[200],
+                      color: Colors.orangeAccent[200].withOpacity(0.6),
                       borderRadius: BorderRadius.circular(10)),
                 ),
               );

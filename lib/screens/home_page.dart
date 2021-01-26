@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                 height: MediaQuery.of(context).size.height * 0.1,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Colors.pink[100]),
+                    color: Colors.pink[100].withOpacity(0.4)),
                 child: ListTile(
                   title: Center(
                     child: Text(
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                 height: MediaQuery.of(context).size.height * 0.1,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15),
-                    color: Colors.green[200]),
+                    color: Colors.green[200].withOpacity(0.4)),
                 child: ListTile(
                   title: Center(
                     child: Text(
