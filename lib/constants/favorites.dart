@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:fruti/constants/AppTheme.dart';
 import 'package:line_icons/line_icons.dart';
 
-class FruitList extends StatefulWidget {
+class FavoritesList extends StatefulWidget {
   @override
-  _FruitListState createState() => _FruitListState();
+  _FavoritesListState createState() => _FavoritesListState();
 }
 
-class _FruitListState extends State<FruitList> {
+class _FavoritesListState extends State<FavoritesList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(

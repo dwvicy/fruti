@@ -12,17 +12,22 @@ class _NotifListState extends State<NotifList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text(
+          'Notifications',
+          style: TextStyle(color: Colors.black54, fontSize: 25),
+        ),
         backgroundColor: Colors.white,
         elevation: 0,
-        leading: IconButton(icon:Icon(Icons.arrow_back_ios_rounded,
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_ios_rounded,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
-        onPressed: (){
-          Navigator.pop(context);
-        },
-  
       ),
-      ),
-          body: ListView.builder(
+      body: ListView.builder(
         itemCount: 5,
         itemBuilder: (context, index) {
           return Padding(

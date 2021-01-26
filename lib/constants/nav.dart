@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -47,13 +46,10 @@ class _MyHomeState extends State<MyHome> {
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: IconButton(
-              onPressed: (){
+              onPressed: () {
                 Navigator.pushNamed(context, '/notif');
-            
-              }, 
-              icon: Icon(LineIcons.bell,
-              color: AppTheme.gray,
-              size: 30),
+              },
+              icon: Icon(LineIcons.bell, color: AppTheme.gray, size: 30),
             ),
           )
         ],
