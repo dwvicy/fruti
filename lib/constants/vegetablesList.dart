@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:fruti/constants/fruitCard.dart';
+import 'package:fruti/constants/vegCard.dart';
 
 class VegetablesList extends StatefulWidget {
   @override
@@ -14,21 +16,7 @@ class _VegetablesListState extends State<VegetablesList> {
             scrollDirection: Axis.horizontal,
             itemCount: 5,
             itemBuilder: (context, index) {
-              return Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/veggie');
-                  },
-                  child: Container(
-                    width: MediaQuery.of(context).size.width * 0.35,
-                    child: Text('this.fruit'),
-                    decoration: BoxDecoration(
-                        color: Colors.orangeAccent[200].withOpacity(0.6),
-                        borderRadius: BorderRadius.circular(10)),
-                  ),
-                ),
-              );
+              return VegCard(title: 'this.veg');
             }));
   }
 }
