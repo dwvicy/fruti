@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:fruti/constants/fruitCard.dart';
 import 'package:fruti/constants/vegCard.dart';
 
 class VegetablesList extends StatefulWidget {
